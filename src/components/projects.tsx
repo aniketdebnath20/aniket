@@ -4,36 +4,59 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "A full-featured e-commerce solution with real-time inventory, payment processing, and admin dashboard.",
-    tags: ["Next.js", "Stripe", "PostgreSQL"],
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
+    title: "B2B AI SaaS Support Platform",
+    description:
+      "A B2B AI-powered SaaS platform designed to automate customer support workflows. Features include real-time conversations, scalable cloud infrastructure, AI voice assistance, and a modern admin dashboard built for enterprise use.",
+    tags: [
+      "Next.js",
+      "Node.js",
+      "Tailwind CSS",
+      "Convex",
+      "AWS",
+      "Turborepo",
+      "Vapi",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
     liveUrl: "#",
-    githubUrl: "#",
+    githubUrl: "",
   },
   {
-    title: "AI Content Studio",
-    description: "AI-powered content generation platform with custom models for marketing and creative writing.",
-    tags: ["React", "OpenAI", "Node.js"],
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop",
+    title: "Video Calling Realtime Chat App",
+    description:
+      "A real-time chat and video calling application with secure authentication, one-to-one messaging, video calls, and presence indicators. Built with Stream for messaging, optimized state management, and a responsive UI.",
+    tags: [
+      "React",
+      "MongoDB",
+      "Node.js",
+      "Stream",
+      "TanStack Query",
+      "Tailwind CSS",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop",
     liveUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/aniketdebnath20/stream",
   },
   {
-    title: "Real-Time Analytics",
-    description: "Dashboard for monitoring business metrics with live data visualization and custom reports.",
-    tags: ["TypeScript", "D3.js", "WebSocket"],
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+    title: "AI PDF Reader and Summarizer",
+    description:
+      "An AI-powered PDF reader that extracts, analyzes, and summarizes documents using Gemini AI and LangChain. Users can upload PDFs, ask questions, and receive concise summaries through an intuitive interface.",
+    tags: ["React.js", "Tailwind CSS", "Gemini AI", "LangChain", "Firebase"],
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
     liveUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/aniketdebnath20/PDF_Reader",
   },
   {
-    title: "Developer Collaboration Tool",
-    description: "Code review and collaboration platform with real-time editing and version control integration.",
-    tags: ["React", "GraphQL", "Docker"],
-    image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop",
+    title: "URL Shortener with Analytics",
+    description:
+      "A URL shortening platform with built-in analytics to track clicks, traffic sources, and performance. Includes authentication, dashboard visualizations, and real-time data charts for link insights.",
+    tags: ["React", "Supabase", "Recharts", "Tailwind CSS"],
+    image:
+      "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop",
     liveUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/aniketdebnath20/url_shoter",
   },
 ];
 

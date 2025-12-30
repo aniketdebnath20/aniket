@@ -2,7 +2,7 @@ import { AnimatedSection, AnimatedText } from "./animatedsection";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 
-const techStack = ["React", "Tailwind CSS", "Node.js", "MongoDB", "Express"];
+const techStack = ["Next.js", "Tailwind CSS", "MongoDB", "Excel Sheet"];
 
 export const RealWorldProject = () => {
   return (
@@ -52,7 +52,9 @@ export const RealWorldProject = () => {
             {/* CTA */}
             <AnimatedSection delay={0.4}>
               <motion.a
-                href="#"
+                href="https://careerpointcomputerinstitution.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ x: 8 }}
                 className="inline-flex items-center gap-4 group"
               >

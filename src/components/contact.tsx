@@ -37,6 +37,9 @@ export const Contact = () => {
     offset: ["start end", "end start"],
   });
 
+  const CONTACT_EMAIL = "debnathaniket41@gmail.com";
+  const GMAIL_LINK = `https://mail.google.com/mail/?view=cm&fs=1&to=${CONTACT_EMAIL}&su=Hiring%20Inquiry&body=Hi%20Aniket,%0A%0AI%20would%20like%20to%20discuss%20a%20project.%0A`;
+
   return (
     <div ref={containerRef} className="relative h-[220vh] md:h-[300vh]">
       <motion.section
@@ -57,10 +60,12 @@ export const Contact = () => {
 
             <div className="flex items-center justify-between">
               <motion.a
-                href="mailto:hello@johndoe.dev"
+                href={GMAIL_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="inline-flex items-center gap-3 bg-[hsl(65,100%,50%)] text-black px-8 py-4 rounded-full font-bold text-sm uppercase tracking-wider hover:bg-[hsl(65,100%,45%)] transition-colors group"
+                className="inline-flex items-center gap-2 bg-[hsl(65,100%,50%)] text-black px-7 py-4 rounded-full font-bold text-xs uppercase tracking-wider"
               >
                 Hire Me
                 <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -91,13 +96,19 @@ export const Contact = () => {
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
               <motion.a
-                href="mailto:hello@johndoe.dev"
+                href={GMAIL_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="inline-flex items-center gap-2 bg-[hsl(65,100%,50%)] text-black px-6 py-3 rounded-full font-bold text-xs uppercase tracking-wider hover:bg-[hsl(65,100%,45%)] transition-colors group"
+                className="inline-flex items-center gap-2 bg-[hsl(65,100%,50%)] text-black px-6 py-3 rounded-full font-bold text-xs uppercase tracking-wider"
               >
                 Hire Me
-                <ArrowUpRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                <ArrowUpRight
+                  className="w-3.5 h-3.5 transition-transform
+            group-hover:translate-x-0.5
+            group-hover:-translate-y-0.5"
+                />
               </motion.a>
 
               <p className="text-muted-foreground text-xs max-w-[260px] text-center uppercase tracking-wide leading-relaxed">
