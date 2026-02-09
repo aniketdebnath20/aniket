@@ -72,7 +72,7 @@ const categoryColors: Record<string, string> = {
 export const Skills = () => {
   return (
     <section id="skills" className="py-24 px-6 md:px-12 lg:px-24 bg-background overflow-hidden">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <AnimatedText>
           <span className="text-primary font-medium tracking-wider uppercase text-sm">
             Skills & Expertise
@@ -87,7 +87,7 @@ export const Skills = () => {
         </AnimatedSection>
 
         <TooltipProvider delayDuration={100}>
-          <div className="flex flex-wrap justify-center gap-3 md:gap-4">
+          <div className="flex flex-wrap justify-center gap-3 md:gap-4 max-w-5xl mx-auto">
             {skills.map((skill, index) => (
               <Tooltip key={skill.name}>
                 <TooltipTrigger asChild>
