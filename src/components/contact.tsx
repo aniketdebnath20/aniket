@@ -1,16 +1,18 @@
 import { ArrowUpRight } from "lucide-react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, type MotionValue } from "framer-motion";
 import { useRef } from "react";
 
-const RevealText = ({
-  children,
-  className,
-  progress,
-}: {
+/* -------------------------------------------------------------------------- */
+/*                               RevealText                                   */
+/* -------------------------------------------------------------------------- */
+
+interface RevealTextProps {
   children: string;
   className?: string;
-  progress: any;
-}) => {
+  progress: MotionValue<number>;
+}
+
+const RevealText = ({ children, className, progress }: RevealTextProps) => {
   const clipPath = useTransform(
     progress,
     [0.15, 0.85],
@@ -18,7 +20,7 @@ const RevealText = ({
   );
 
   return (
-    <div className={`relative ${className}`}>
+    <div className={`relative ${className ?? ""}`}>
       <span className="text-muted-foreground/20">{children}</span>
       <motion.span
         className="absolute inset-0 text-foreground"
@@ -30,8 +32,13 @@ const RevealText = ({
   );
 };
 
+/* -------------------------------------------------------------------------- */
+/*                                  Contact                                   */
+/* -------------------------------------------------------------------------- */
+
 export const Contact = () => {
   const containerRef = useRef<HTMLDivElement>(null);
+
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start end", "end start"],
@@ -68,7 +75,7 @@ export const Contact = () => {
                 className="inline-flex items-center gap-2 bg-[hsl(65,100%,50%)] text-black px-7 py-4 rounded-full font-bold text-xs uppercase tracking-wider"
               >
                 Hire Me
-                <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                <ArrowUpRight className="w-4 h-4" />
               </motion.a>
 
               <p className="text-muted-foreground text-sm max-w-[220px] text-center uppercase tracking-wide leading-relaxed">
@@ -104,11 +111,7 @@ export const Contact = () => {
                 className="inline-flex items-center gap-2 bg-[hsl(65,100%,50%)] text-black px-6 py-3 rounded-full font-bold text-xs uppercase tracking-wider"
               >
                 Hire Me
-                <ArrowUpRight
-                  className="w-3.5 h-3.5 transition-transform
-            group-hover:translate-x-0.5
-            group-hover:-translate-y-0.5"
-                />
+                <ArrowUpRight className="w-3.5 h-3.5" />
               </motion.a>
 
               <p className="text-muted-foreground text-xs max-w-[260px] text-center uppercase tracking-wide leading-relaxed">
